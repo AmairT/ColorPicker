@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Write your Color component here 
-// use object deconstruction 
+// Use object deconstruction Or use dot notation return <div className={props.color}></div>
 const Color = ({color, setSelectedColor}) => {
 return (
   <div 
@@ -10,9 +10,10 @@ return (
     ></div>
   )
 }
-// Or using dot notation return <div className={props.color}></div>
 
-
+// Start with a Picker component (App)
+// Create a navbar to select a Color component
+// In the return statement of your Picker component, place three instances of our Color component.
 const App = () => {
 const [selectedColor, setSelectedColor] = useState("")
   return (
